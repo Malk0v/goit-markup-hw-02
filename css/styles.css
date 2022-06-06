@@ -1,0 +1,251 @@
+/* черный #000000 */
+/* основной текст #212121; */
+/* второстепеный цвет #757575; */
+/* акцент #2196F3 */
+/* оттенок акцента #188CE8; */
+/* футер бекграунд #2F303A; */
+/* color #F5F4FA */
+/* молочный #F5F4FA */
+
+
+:root{
+    --opacity-grey: rgba(117, 117, 117, 1);
+    --opacity-white: rgba(255, 255, 255, 0.6);
+    --white-color: #ffffff;
+    --milk-color: #F5F4FA;
+    --grey-color: #757575;
+    --black-color: #212121;
+    --backgraund-color: #2F303A;
+    --black:#000000;
+    --akcent-color: #2196F3;
+    --akcent-fon: #188CE8;
+    
+}
+
+ul li{
+    list-style: none;
+}
+
+body{
+font-family: 'Roboto',
+sans-serif;
+color: var(--black-color);
+}
+
+/* лого */
+.header-logo{
+color:var(--black);
+font-size: 26px;
+text-decoration: none;
+font-family: 'Raleway',
+sans-serif;
+}
+
+.header-logo:hover{
+    color: var(--akcent-color);
+}
+
+.logo-span{
+   color: var(--akcent-color); 
+}
+
+/* навигация */
+
+.header{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.nav-li a{
+    font-size: 14px;
+    font-weight: 500;
+    color:var(--black-color);
+    text-decoration: none;
+    }
+
+ .nav-li a:hover, .nav-li:focus {
+     color: var(--akcent-color);
+ }
+
+.nav-aut {
+    color: var(--opacity-grey);
+    text-decoration: none;
+    list-style-type: none;
+    font-style: normal;
+}
+
+.nav-aut:hover,
+.nav-aut:focus {
+    color: var(--akcent-color);
+}
+
+.foot-aut{
+    color: var(--opacity-white);
+    text-decoration: none;
+    list-style-type: none;
+    font-style: normal;
+}
+
+.foot-aut:hover,
+.nav-aut:focus
+{
+    color: var(--akcent-color);
+}
+
+
+
+/* блок герой */
+.title{
+    padding:40px;
+    background-color: var(--backgraund-color);
+    color: var(--white-color);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn{
+    background-color: var(--akcent-color);
+    color: var(--white-color);
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+}
+
+.btn:hover, .btn:focus{
+    background-color: var(--akcent-fon);
+}
+    /* наши сильные стороны */
+.h2-none{
+    display: none;
+} 
+
+.power h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+}
+
+.power p{
+    color: var(--grey-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.why{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+/* Команда */
+.team{
+    background-color: var(--milk-color);
+}
+
+.team > h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    }
+
+.team p{
+color: var(--grey-color); 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* footer */
+.footer{
+    background-color: var(--backgraund-color);
+}
+
+/* footer logo */
+.footer-logo{
+    color: var(--white-color);
+    font-size: 26px;
+    text-decoration: none;
+    font-family: 'Raleway',
+    sans-serif;
+}
+
+.footer-logo:hover{
+    color: var(--akcent-color);
+}
+
+.maps{
+    color: var(--white-color);
+    text-decoration: none;
+    font-style: normal;
+}
+
+.maps:hover{
+    color: var(--akcent-color);
+}
+
+
+/* Портфолио */
+
+.nav-btn li button{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    width: 103px;
+    height: 38px;
+    left: 865px;
+    top: 174px;
+    background-color: var(--milk-color);
+    color: var(--black-color)
+ }
+
+.nav-btn li button:active,:focus{
+    color: var(--white-color);
+    background-color: var(--akcent-fon);
+}
+
+.work a{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: var(--black-color);
+    text-decoration-line: none;
+}
+
+.work p{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--grey-color);
+}
