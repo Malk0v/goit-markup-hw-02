@@ -116,6 +116,7 @@ sans-serif;
     height: 50px;
     left: 700px;
     top: 430px;
+    cursor: pointer;
 }
 
 .btn:hover, .btn:focus{
@@ -229,6 +230,11 @@ color: var(--grey-color);
 .nav-btn li button:active,:focus{
     color: var(--white-color);
     background-color: var(--akcent-fon);
+}
+
+.nav-btn li button:hover{
+    color: var(--akcent-color);
+    cursor: pointer;
 }
 
 .work a{
