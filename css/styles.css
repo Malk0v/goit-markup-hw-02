@@ -41,10 +41,6 @@ font-family: 'Raleway',
 sans-serif;
 }
 
-.header-logo:hover{
-    color: var(--akcent-color);
-}
-
 .logo-span{
    color: var(--akcent-color); 
 }
@@ -110,6 +106,7 @@ sans-serif;
 }
 
 .btn{
+    font-family: 'Roboto';
     background-color: var(--akcent-color);
     color: var(--white-color);
     width: 200px;
@@ -195,10 +192,6 @@ color: var(--grey-color);
     sans-serif;
 }
 
-.footer-logo:hover{
-    color: var(--akcent-color);
-}
-
 .maps{
     color: var(--white-color);
     text-decoration: none;
@@ -219,7 +212,6 @@ color: var(--grey-color);
     line-height: 26px;
     letter-spacing: 0.03em;
     text-align: center;
-    width: 103px;
     height: 38px;
     left: 865px;
     top: 174px;
@@ -233,7 +225,8 @@ color: var(--grey-color);
 }
 
 .nav-btn li button:hover{
-    color: var(--akcent-color);
+    color: var(--milk-color);
+    background-color: var(--akcent-fon);
     cursor: pointer;
 }
 
