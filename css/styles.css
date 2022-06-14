@@ -1,3 +1,5 @@
+
+/* outline: tomato; */
 /* черный #000000 */
 /* основной текст #212121; */
 /* второстепеный цвет #757575; */
@@ -22,16 +24,35 @@
     
 }
 
+html {
+    box-sizing: border-box;
+}
+
+•,
+•::before,
+•::after {
+    box-sizing: inherit;
+}
+
 ul li{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 body{
+ background-color: #F5F4FA;
+margin: 0;
 font-family: 'Roboto',
 sans-serif;
 color: var(--black-color);
 }
 
+.main{
+    max-width: 1400px;
+    margin: auto;
+    background-color: var(--white-color);
+}
 /* лого */
 .header-logo{
 color:var(--black);
@@ -48,51 +69,93 @@ sans-serif;
 /* навигация */
 
 .header{
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
 }
 
-.nav-li a{
+.nav-li {
+    display: flex;
+}
+
+.nav-li .item a{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    color:var(--black-color);
+
+    /* margin-right: 40px; */
     font-size: 14px;
     font-weight: 500;
-    color:var(--black-color);
-    text-decoration: none;
+   text-decoration: none;
+    }
+
+    /* Варианты выделить */
+
+    /* .nav-li .item:last-child{
+        margin: 0;
+    } */
+
+    /* .nav-li .item:not(:last-child ){
+        margin-right: 40px;
+    } */
+
+    .nav-li .item + .item{
+        margin-left: 40px;
     }
 
  .nav-li a:hover, .nav-li:focus {
      color: var(--akcent-color);
  }
 
-.nav-aut {
+.nav-aut{
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-aut .item + .item {
+    margin-left: 12px;
+}
+
+.nav-aut a {
+    list-style-type: none;
+    font-style: normal;
     color: var(--opacity-grey);
     text-decoration: none;
-    list-style-type: none;
-    font-style: normal;
 }
 
-.nav-aut:hover,
-.nav-aut:focus {
-    color: var(--akcent-color);
+.nav-aut a:hover,
+.nav-aut a:focus {
+ color: var(--akcent-color);
 }
 
-.foot-aut{
-    color: var(--opacity-white);
+.foot-aut {
     text-decoration: none;
     list-style-type: none;
     font-style: normal;
+    color: var(--opacity-white);
 }
 
 .foot-aut:hover,
-.nav-aut:focus
-{
+.nav-aut, .item:focus{
     color: var(--akcent-color);
 }
 
-
+.main-nav{
+    display: flex;
+    align-items: center;
+}
 
 /* блок герой */
+
+.title h1{
+    padding: 0;
+    margin: 0;
+}
 .title{
     padding:40px;
     background-color: var(--backgraund-color);
@@ -106,7 +169,11 @@ sans-serif;
 }
 
 .btn{
+    display: inline-block;
     font-family: 'Roboto';
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     background-color: var(--akcent-color);
     color: var(--white-color);
     width: 200px;
@@ -123,6 +190,11 @@ sans-serif;
 .h2-none{
     display: none;
 } 
+
+.power-item{
+    display: flex;
+    padding: 20px;
+}
 
 .power h3{
     font-family: 'Roboto';
@@ -148,6 +220,14 @@ sans-serif;
     text-align: center;
 }
 
+.why-item{
+display: flex;
+}
+
+.why-item li{
+margin: 10px;
+}
+
 /* Команда */
 .team{
     background-color: var(--milk-color);
@@ -162,6 +242,19 @@ sans-serif;
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+.team-item{
+    display: flex;
+}
+
+.why-item:nth-child(3n){
+    margin-bottom: 0;
+}
+
+.team-item li{
+margin: 10px;
+}
+
 
 .team h3{
     font-style: normal;
@@ -180,6 +273,7 @@ color: var(--grey-color);
 
 /* footer */
 .footer{
+    display: flex;
     background-color: var(--backgraund-color);
 }
 
@@ -190,6 +284,10 @@ color: var(--grey-color);
     text-decoration: none;
     font-family: 'Raleway',
     sans-serif;
+}
+
+.foot-item a{ 
+    display: flex;
 }
 
 .maps{
@@ -205,7 +303,16 @@ color: var(--grey-color);
 
 /* Портфолио */
 
-.nav-btn li button{
+.nav-btn{
+    display: flex;
+    justify-content: center;
+}
+.nav-btn li button {
+    margin: 20px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
@@ -228,6 +335,25 @@ color: var(--grey-color);
     color: var(--milk-color);
     background-color: var(--akcent-fon);
     cursor: pointer;
+}
+
+.work{
+display: flex;
+flex-wrap: wrap;
+}
+
+.work-item{
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.work-item:nth-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.work-item:nth-child(3n){
+    margin-right: 0;
 }
 
 .work a{
