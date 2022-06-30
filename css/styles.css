@@ -426,8 +426,7 @@ background-color: var(--milk-color);
     
     .social-link {
         display: flex;
-        padding: 15px;
-        padding: 10px;
+        padding: 20px;
         justify-content: space-around;
     }
     
@@ -438,7 +437,7 @@ background-color: var(--milk-color);
     
     .social-svg {
         padding: 10px;
-        border-radius: 25px;
+        border-radius: 20px;
         fill: #afb1b8;
     }
     
