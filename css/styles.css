@@ -615,10 +615,15 @@ margin: auto 0px;
     letter-spacing: 0.06em;
 }
 
+.send-button:hover{
+    background-color: var(--white-color);
+    color: #188CE8;
+}
+
 .svg-send{
     width: 24px;
     height: 24px;
-    fill: var(--white-color);
+    fill: var(--grey-color);
 }
 
 /* Портфолио */
