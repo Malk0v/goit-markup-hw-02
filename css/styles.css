@@ -117,8 +117,9 @@ body {
 }
 
 .nav-li {
-    display: flex;
+    display: inline-flex;
     max-width: 1170px;
+    align-items: center;
     /* margin: auto; */
 }
 
@@ -153,18 +154,20 @@ body {
 
 .nav-li a:hover,
 .nav-li:focus {
+    transition: all 0.2s ease 0s;
     color: var(--akcent-color);
 }
 
 .nav-li a:active{
+    transition: all 0.2s ease 0s;
     color: var(--milk-color);
 }
 
 
 /* блок обратной связи */
 
-.nav-aut {
-    display: flex;
+.nav-aut {   
+    display: inline-flex;
     margin-left: auto;
 }
 
@@ -172,7 +175,7 @@ body {
     margin-left: 12px;
 }
 
-.nav-aut a {
+.nav-aut a {   
     padding: 5px;
     border-radius: 30px;
     list-style-type: none;
@@ -181,31 +184,29 @@ body {
     text-decoration: none;
 }
 
-
-.nav-aut a:hover,
-.nav-aut a:focus {
-color: var(--akcent-color);
+.nav-item :hover {
+    transition: all 0.2s ease 0s;
+   color: var(--akcent-color);
+   fill: var(--akcent-color);
 }
 
 .nav-aut a:active {
     color: var(--milk-color);
 }
 
-.nav-item a{
-justify-content: center;
-}
-
 .nav-svg{
-    display: inline-block;
     fill: var(--grey-color);
-    margin:5px 5px 0 0;
-    width: 16px;
-    height: 16px;
+    margin:5px 2px 0 0;
+    width: 20px;
+    height: 25px;
 }
 
-.nav-svg:hover{
- fill: var(--akcent-color);
+.nav-svg:active{
+    fill: var(--milk-color);
 }
+/* .nav-svg:hover{
+
+} */
 
 .main {
     max-width: 1170px;
@@ -252,7 +253,6 @@ justify-content: center;
 
 .btn {
     display: inline-block;
-    /* font-family: 'Roboto'; */
     font-size: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -267,6 +267,7 @@ justify-content: center;
 
 .btn:hover,
 .btn:focus {
+    transition: all 0.2s ease 0s;
     background-color: var(--akcent-fon);
 }
 
@@ -439,29 +440,28 @@ background-color: var(--milk-color);
     }
 
     /* social link */
-    
+
     .social-link {
-        display: flex;
-        padding: 20px;
-        justify-content: space-around;
+    padding: 0 25px;
+    justify-content: space-around;
+    display: flex;
+    margin: 5px;
     }
-    
-    .social-link svg {
-        width: 20px;
-        height: 20px;
-    }
-    
+
     .social-svg {
-        padding: 10px;
-        border-radius: 20px;
-        fill: #afb1b8;
+    transition: all 1s ease 0s;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    fill: #afb1b8;
     }
-    
-    .social-svg:hover {
-        cursor: pointer;
-        background-color: #188CE8;
-        fill: var(--white-color);
-    }
+
+.social-svg:hover {
+    transform: translate(4px, 4px);
+    fill: #fff;
+    background-color: #188CE8;
+    border-radius: 50%;
+}
 
 
 /* clients */
@@ -621,8 +621,8 @@ margin: auto 0px;
 }
 
 .svg-send{
-    width: 24px;
-    height: 24px;
+    width: 29px;
+    height: 29px;
     fill: var(--grey-color);
 }
 
@@ -721,3 +721,5 @@ margin: 18px;
     letter-spacing: 0.03em;
     color: var(--grey-color);
 }
+
+
