@@ -449,11 +449,11 @@ background-color: var(--milk-color);
     }
 
     .social-svg {
-        border-radius: 25%;
     transition: all 0.7s ease 0s;
     margin: 5px;
     width: 40px;
     height: 40px;
+    border-radius: 25%;
     fill: #afb1b8;
     }
 
