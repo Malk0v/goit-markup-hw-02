@@ -19,7 +19,7 @@
 <body class="body">
     
     <header class="header">
-        <nav class="conteiner main-nav">
+        <nav class="conteiner">
             <a href="./index.html" class="logo"><span class="logo-span">Web</span>Studio</a>
             <ul class="nav-li">
                 <li class="item"> <a href="./index.html">Студия</a></li>
@@ -42,11 +42,11 @@
     </header>
 
 
-    <main>
+    <main class="main">
             <!-- герой -->
             <section class="title overlay">
                 <h1> Эффективные решения <br> для вашего бизнеса</h1>
-                <button type="button" class="btn">Заказать услугу</button>
+                <button type="button" class="btn" data-open-modal>Заказать услугу</button>
             </section>
             <div class="main">
             <!-- наши сильные стороны -->
@@ -68,7 +68,7 @@
                         <li class="li-power">
                            <div class="power-wrapper">
                                 <svg class="power-svg">
-                                    <use href="./images/symbol-defs.svg#icon-clock"></use>
+                                    <use href="./images/symbol-defs.svg#icon-clock" width="70" height="70"></use>
                                 </svg>
                            </div>
                             <h3>Пунктуальность</h3>
@@ -99,23 +99,31 @@
                     </ul>
                 </section>
             <!-- чем мы занимаемся    -->
+                <!-- Чем мы занимаемся -->
                 <section>
                     <h2 class="why">Чем мы занимаемся</h2>
                     <ul class="why-item">
-                        <li class="why-pc">
-                            <!-- <img src="./images/img.jpg" alt="macBook" width="370" height="294"> -->
-                            <p>десктопные приложения</p>
+                        <li>
+                            <div class="why-img">
+                                <img src="./images/img.jpg" alt="macBook" width="370" height="294">
+                                <p class="why-p">десктопные приложения</p>
+                            </div>
                         </li>
-                        <li class="why-mob">
-                            <!-- <img src="./images/box-2.jpg" alt="iPhone" width="370" height="294"> -->
-                           <p>мобильные приложения</p>
+                        <li>
+                            <div class="why-img">
+                                <img src="./images/box-2.jpg" alt="iPhone" width="370" height="294">
+                                <p class="why-p">мобильные приложения</p>
+                            </div>
                         </li>
-                        <li class="why-dis">
-                            <!-- <img src="./images/box-3.jpg" alt="iPad" width="370" height="294"> -->
-                            <p>дизайнерские решения</p>
-                        </li>
+                        <div class="why-img">
+                            <li>
+                                <img src="./images/box-3.jpg" alt="iPad" width="370" height="294">
+                                <p class="why-p">дизайнерские решения</p>
+                            </li>
+                        </div>
                     </ul>
                 </section>
+
             <!-- команда    -->
                 <section class="team">
                     <h2 class="team-h2">Наша команда</h2>
@@ -285,6 +293,23 @@
             </div>
     </main>
 
+    <div class="backdrop is-hidden" data-backdrop>
+
+            <div class="modal">
+            <p>
+                <form action="contacts">место для вашей рекламы))
+                </form>
+            </p>
+              <button class="close" data-close-modal> 
+                  <svg class="close-svg">
+                      <use href="../goit-markup-hw-02/images/symbol-defs.svg#icon-close" width="15" height="15"  x="7" y="7"></use>
+                  </svg>
+              </button>
+            </div>
+
+       
+    </div>
+
     <footer class="footer">
             <div class="footer-2">
              <!-- лого,адресс,почта,телефон -->
@@ -343,7 +368,7 @@
                        <p>E-mail</p>
                         <button type="button" class="send-button">Подписатся
                             <svg class="svg-send">
-                                <use href="../goit-markup-hw-02/images/symbol-defs.svg#icon-envelope" width="20" height="20" x="4" y="11"></use>
+                                <use href="../goit-markup-hw-02/images/symbol-defs.svg#send" width="20" height="20" x="4" y="11"></use>
                             </svg>
                         </button>
                     </div>
@@ -351,6 +376,27 @@
             </div>
     </footer>
 
+
+<script>
+    const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+    };
+
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+
+    refs.backdrop.addEventListener("click", logBackdropClick); 
+
+    function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+    }
+
+    function logBackdropClick() {
+        console.log("это клик в бэкдроп");
+    }
+</script>
 </body>
 
 </html>
