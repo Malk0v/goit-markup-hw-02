@@ -739,6 +739,7 @@ margin: 18px;
 /* модалка */
 
 .backdrop{
+transition: all 0.3s ease 0s;
 position: fixed;
 top: 0;
 left: 0;
