@@ -79,6 +79,7 @@ body {
 
 /* навигация */
 .header{
+    z-index: 1;
     position: fixed;
     top: 0;
     right: 50%;
@@ -697,12 +698,18 @@ ul{
 }
 
 .work-item {
+    position: relative;
     text-align: center;
     width: 370px;
     border: 1px solid #EEEEEE;
     /* width: calc((100% - 100px) / 3); */
     margin: 15px;
 }
+
+/* .work-item:hover {
+    position: absolute;
+    background-color: rgba#2196F350;
+} */
 
 .work-item > h2{
 margin: 18px;
@@ -734,7 +741,10 @@ margin: 18px;
     color: var(--grey-color);
 }
 
-
+/* .work-item:hover{
+    position: absolute;
+    background-color: #2196F3;
+} */
 
 /* модалка */
 
