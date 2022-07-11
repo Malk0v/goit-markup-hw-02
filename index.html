@@ -18,27 +18,46 @@
 
 <body class="body">
     
+<!-- header -->
+        
     <header class="header">
-        <nav class="conteiner">
-            <a href="./index.html" class="logo"><span class="logo-span">Web</span>Studio</a>
-            <ul class="nav-li">
-                <li class="item"> <a href="./index.html">Студия</a></li>
-                <li class="item"><a href="./portfolio.html">Портфолио</a></li>
-                <li class="item"><a href="">Контакты</a></li>
-            </ul>
-
-            <ul class="nav-aut">
-                <li class="nav-item"><a href="mailto:info@devstudio.com">
-                        <svg class="nav-svg">
-                            <use href="../goit-markup-hw-02/images/symbol-defs.svg#icon-envelope" width="16" height="14"  x="3" y="12"> </use>
-                        </svg> info@devstudio.com</a></li>
-                <li class="nav-item"><a href="tel:+380961111111">
-                    <svg class="nav-svg">
-                        <use href="../goit-markup-hw-02/images/symbol-defs.svg#icon-smartphone" width="10" height="16" x="9" y="9"> </use>
-                    </svg>telephone</a></li>
-
-            </ul>
-        </nav>
+        <div class="conteiner">
+            <nav class="nav">
+                <a class="logo" href="./index.html" ><span class="word-web">Web</span>Studio</a>
+                <ul>
+                    <li class="nav-list">
+                        <div class="item"></div>
+                        <a class="header-link" href="./index.html">Студия</a>
+                    </li>
+    
+                    <li class="nav-list">
+                        <!-- <div class="item"></div> -->
+                        <a class="header-link" href="./portfolio.html">Портфолио</a>
+                    </li>
+    
+                    <li class="nav-list">
+                        <!-- <div class="item"></div> -->
+                        <a class="header-link" href="./portfolio.html">Контакты</a>
+                    </li>
+                </ul>
+    
+                <ul class="connection"> 
+    
+                    <li class="connection-link">
+                        <a href="mailto:info@devstudio.com">
+                            <svg class="connection-svg">
+                                <use href="./images/symbol-defs.svg#icon-envelope" width="17" height="17" x="0" y="8"> </use>
+                            </svg> info@devstudio.com</a></li>
+    
+                    <li class="connection-link">
+                        <a href="tel:+380961111111">
+                            <svg class="connection-svg">
+                                <use href="./images/symbol-defs.svg#icon-smartphone" width="17" height="17" x="0" y="6"> </use>
+                            </svg>+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
@@ -253,40 +272,39 @@
                 <section class="clients">
                     <h2>Постоянные клиенты</h2>
                     <ul class="names">
+                        <li>
+                            <svg class="clients-svg">
+                                <use href="./images/symbol-defs.svg#icon-Client-1"></use>
+                            </svg>
+                        </li>
                     
                         <li>
-                            <div class="clients-wrapper">
                             <svg class="clients-svg">
-                                <use href="./images/symbol-defs.svg#icon-Client-2" width="106" height="60"></use>
+                                <use href="./images/symbol-defs.svg#icon-Client-2"></use>
                             </svg>
-                        </div></li>
-                        <li>
-                            <div class="clients-wrapper">
-                                <svg class="clients-svg">
-                                    <use href="./images/symbol-defs.svg#icon-Client-3" width="106" height="60"></use>
-                                </svg>
-                            </div>
                         </li>
-                        <li><div class="clients-wrapper">
+
+                        <li>
                             <svg class="clients-svg">
-                                <use href="./images/symbol-defs.svg#icon-Client-4" width="106" height="60"></use>
+                                <use href="./images/symbol-defs.svg#icon-Client-3"></use>
                             </svg>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="clients-wrapper">
+                        </li>
+                        <li>
                             <svg class="clients-svg">
-                                <use href="./images/symbol-defs.svg#icon-Client-5" width="106" height="60"></use>
+                                <use href="./images/symbol-defs.svg#icon-Client-4"></use>
                             </svg>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="clients-wrapper">
+                        </li>
+
+                        <li>
                             <svg class="clients-svg">
-                                <use href="./images/symbol-defs.svg#icon-Client-6" width="106" height="60"></use>
+                                <use href="./images/symbol-defs.svg#icon-Client-5"></use>
                             </svg>
-                        </div>
-                    </li>
+                        </li>
+                        <li>
+                            <svg class="clients-svg">
+                                <use href="./images/symbol-defs.svg#icon-Client-6"></use>
+                            </svg>
+                        </li>
                     </ul>
                 </section>
 
@@ -316,21 +334,22 @@
             <div class="footer-2">
              <!-- лого,адресс,почта,телефон -->
                 <address>
+                
                     <div class="foot-logo">
-                        <a href="./index.html" class="logo secondary"><span class="logo-span">Web</span>Studio</a>
+                        <a href="./index.html" class="secondary"><span class="word-web">Web</span>Studio</a>
                     </div>
-                      <ul>
-                          <li class="foot-item">
-                              <a href="https://goo.gl/maps/RxfCTYUpQu2i5JpL6" class="maps">
-                                  г. Киев, пр-т Леси Украинки, 26</a>
-                          </li>
-                          <li class="foot-item">
-                              <a href="mailto:info@devstudio.com" class="foot-aut">info@devstudio.com</a>
-                          </li>
-                          <li class="foot-item">
-                              <a href="tel:+380961111111" class="foot-aut">+38 096 111 11 11</a>
-                          </li>
-                      </ul>
+                    <ul>
+                        <li class="foot-item">
+                            <a href="https://goo.gl/maps/RxfCTYUpQu2i5JpL6" class="maps">
+                                г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="foot-item">
+                            <a href="mailto:info@devstudio.com" class="foot-aut">info@devstudio.com</a>
+                        </li>
+                        <li class="foot-item">
+                            <a href="tel:+380961111111" class="foot-aut">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
                 </address>
 
                 <!-- наши социальные сети -->
