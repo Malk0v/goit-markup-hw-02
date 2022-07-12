@@ -1,0 +1,327 @@
+ul li{
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+:root {
+    --opacity-grey: rgba(117, 117, 117, 1);
+    --opacity-white: rgba(255, 255, 255, 0.6);
+    --white-color: #ffffff;
+    --milk-color: #F5F4FA;
+    --grey-color: #757575;
+    --black-color: #212121;
+    --backgraund-color: #2F303A;
+    --black: #000000;
+    --akcent-color: #2196F3;
+    --akcent-fon: #188CE8;
+    --hover: #188ae871;
+}
+
+body{
+    background-color: var(--milk-color);
+    color: var(--black-color);
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.header {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.conteiner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 80px;
+}
+
+.nav {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* лого */
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-right: 5%;
+    color: var(--black);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+
+.word-web {
+    color: var(--akcent-color);
+}
+
+.secondary {
+    color: var(--white-color);
+}
+
+/* навигация */
+
+.nav>ul {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--akcent-color);
+}
+
+.header-link {
+    color: var(--black-color);
+}
+
+.header-link:hover {
+    color: var(--akcent-color);
+    transition: all 0.2s ease 0s;
+}
+
+.connection {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.connection-link :hover {
+    color: #188CE8;
+}
+
+.connection a {
+    padding: 5px;
+    color: #757575;
+}
+
+.connection-svg {
+    width: 20px;
+    height: 23px;
+    fill: currentColor;
+}
+
+/* общая оболочка*/
+.main {
+    padding-top: 80px;
+    margin: auto;
+    background-color: var(--white-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.work-wrapper {
+    max-width: 1170px;
+    margin: 80px auto 20px;
+}
+
+.work {
+    justify-content: center;
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+.product{
+    width: 370px;
+    border: 1px solid #EEEEEE;
+    margin: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.product:hover .product-thumb{
+    transform: translate(0);
+}
+
+.thumb {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.product-thumb{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(24, 140, 232, 0.6);
+    transform: translate(-101%);
+    transition: all 0.3s ease 0s;
+}
+
+.text{
+
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .product {
+    width: 370px;
+    border: 1px solid #EEEEEE;
+    margin: 15px;
+}
+
+.product:hover .product-thumb::before {
+    transform: translate(0);
+}
+
+.thumb {
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.product-thumb::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2196F3;
+    transform: translate(-101%);
+    opacity: 0.7;
+} */
+
+
+
+
+
+
+
+
+
+
+.work-item>h2 {
+    margin: 18px;
+}
+
+.work a {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: var(--black-color);
+}
+
+.work-names {
+    padding: 0 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--grey-color);
+}
