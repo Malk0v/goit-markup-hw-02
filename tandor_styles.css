@@ -29,6 +29,17 @@ html {
     box-sizing: border-box;
 }
 
+.visually-hidden {
+        position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 :root {
     --opacity-grey: rgba(117, 117, 117, 1);
     --opacity-white: rgba(255, 255, 255, 0.6);
@@ -57,8 +68,8 @@ body{
     width: 100%;
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .conteiner {
@@ -176,7 +187,41 @@ body{
 
 
 
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    margin: 94px auto 50px;
+}
 
+.nav-btn li button {
+    text-align: center;
+    height: 38px;
+    padding:6px 22px;
+    margin: 4px;
+    transition: all 0.7s ease 0s;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    background-color: var(--milk-color);
+    color: var(--black-color)
+}
+
+.nav-btn button:focus {
+    color: var(--white-color);
+    background-color: var(--akcent-fon);
+}
+
+.nav-btn button:hover {
+    color: var(--milk-color);
+    background-color: var(--akcent-fon);
+    cursor: pointer;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.1),
+    2px 3px 5px rgba(0, 0, 0, 0.08),
+    2px 3px 5px rgba(0, 0, 0, 0.12);
+}
 
 
 
@@ -201,7 +246,7 @@ body{
 
 .work-wrapper {
     max-width: 1200px;
-    margin: 110px auto 20px;
+    margin: 20px auto;
 }
 
 .work {
@@ -257,6 +302,7 @@ body{
 
 .work-title {
     margin: 15px 5%;
+    font-size: 18px;
 }
 
 .product a {
