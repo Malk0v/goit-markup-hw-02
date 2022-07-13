@@ -18,6 +18,11 @@ a{
     text-decoration: none;
 }
 
+img{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 /*--------------------*/
 /* outline: tomato; */
 /* черный #000000 */
@@ -628,9 +633,9 @@ margin: auto 0px;
     cursor: pointer;
 }
 
-.work-wrapper{
-    max-width: 1170px;
-    margin: 80px auto 20px;
+.work-wrapper {
+    max-width: 1200px;
+    margin: 10px auto 20px;
 }
 
 .work {
@@ -640,74 +645,60 @@ margin: auto 0px;
     flex-wrap: wrap;
 }
 
-.thumb {
-    position: relative;
+.product {
     width: 370px;
     border: 1px solid #EEEEEE;
-    /* width: calc((100% - 100px) / 3); */
     margin: 15px;
+    transition: transorm 250ms (cubic-bezier(.31, .88, .75, .21));
 }
 
-.fon {
+.thumb {
+    width: 100%;
+    height: 294px;
+
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.product-thumb {
     position: absolute;
-    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 140, 232, 0.6);
+    transform: translateY(101%);
+    transition: transform 700ms cubic-bezier(.58, -0.41, .39, 1.33);
 }
 
-.fon:hover {
-    transition: all 0.3s ease 0s;
-    opacity: 0.9;
+.product:hover .product-thumb {
+    transform: translate(0);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 250ms (cubic-bezier(.31, .88, .75, .21));
 }
 
-.portfolio-item{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    /* opacity: 0; */
-    background-color: rgba(#2196F350);
-}
-
-.work-text {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+.product-thumb p {
+    padding: 10%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+    font-size: 18px;
+    /* line-height: 28px; */
+    /* letter-spacing: 0.03em; */
+    color: var(--white-color);
 }
 
-/* .work-item:hover {
-    position: absolute;
-    background-color: rgba#2196F350;
-} */
-
-.work-item > h2{
-margin: 18px;
-}
-/* .work-item:nth-child(-n+3) {
-    margin-bottom: 0;
+.work-title {
+    margin: 15px 5%;
 }
 
-.work-item:nth-child(3n) {
-    margin-right: 0;
-} */
-
-.work a {
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0.06em;
+.product a {
     color: var(--black-color);
 }
 
 .work-names {
-    padding: 0 20px;
+    padding: 0 5% 20px 5%;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
@@ -715,7 +706,6 @@ margin: 18px;
     letter-spacing: 0.03em;
     color: var(--grey-color);
 }
-
 /* модалка */
 
 .backdrop{
