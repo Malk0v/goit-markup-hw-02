@@ -12,6 +12,12 @@ a {
     border: 0;
 }
 
+img {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
 *,
 *:before,
 *:after {
@@ -194,8 +200,8 @@ body{
 
 
 .work-wrapper {
-    max-width: 1170px;
-    margin: 80px auto 20px;
+    max-width: 1200px;
+    margin: 110px auto 20px;
 }
 
 .work {
@@ -205,119 +211,60 @@ body{
     flex-wrap: wrap;
 }
 
-
-
-
-
-
 .product{
     width: 370px;
     border: 1px solid #EEEEEE;
     margin: 15px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.product:hover .product-thumb{
-    transform: translate(0);
+    transition: transorm 250ms (cubic-bezier(.31, .88, .75, .21));
 }
 
 .thumb {
+    width: 100%;
+    height: 294px;
+
     overflow: hidden;
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.product-thumb{
+.product-thumb {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:rgba(24, 140, 232, 0.6);
-    transform: translate(-101%);
-    transition: all 0.3s ease 0s;
+    background-color: rgba(24, 140, 232, 0.6);
+    transform: translateY(101%);
+    transition: transform 700ms cubic-bezier(.58, -0.41, .39, 1.33);
 }
 
-.text{
-
-}
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .product {
-    width: 370px;
-    border: 1px solid #EEEEEE;
-    margin: 15px;
-}
-
-.product:hover .product-thumb::before {
+.product:hover .product-thumb{
     transform: translate(0);
-}
-
-.thumb {
-    position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 250ms (cubic-bezier(.31, .88, .75, .21));
 }
 
-.product-thumb::before {
-    display: inline-block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #2196F3;
-    transform: translate(-101%);
-    opacity: 0.7;
-} */
-
-
-
-
-
-
-
-
-
-
-.work-item>h2 {
-    margin: 18px;
+.product-thumb p{
+    padding: 10%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    /* line-height: 28px; */
+    /* letter-spacing: 0.03em; */
+    color: var(--white-color);
 }
 
-.work a {
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0.06em;
+.work-title {
+    margin: 15px 5%;
+}
+
+.product a {
     color: var(--black-color);
 }
 
 .work-names {
-    padding: 0 20px;
+    padding: 0 5%;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
