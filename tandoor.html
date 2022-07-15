@@ -236,6 +236,87 @@
                     </div>
                 </section>
             </div>
+
+            <!-- модалка -->
+            
+            <div class="backdrop is-hidden" data-backdrop>
+            
+                <div class="modal">
+            
+                    <button class="close" data-close-modal>
+                        <svg class="close-svg">
+                            <use href="../goit-markup-hw-02/images/symbol-defs.svg#icon-close" width="15" height="15" x="7" y="7">
+                            </use>
+                        </svg>
+                    </button>
+            
+                    <h2>Оставьте свои данные, мы вам перезвоним</h2>
+            
+                    <div class="form-wrapper">
+                        <form name="signup_form" autocomplete="on" novalidate>
+                            <label>
+                                Имя
+                                <input type="text" name="username" placeholder="Jacob Mercer" autofocus />
+                            </label>
+            
+                            <label>
+                                Телефон
+                                <input type="tel" name="phone_number" placeholder="+38 050 88 888 88" />
+                            </label>
+            
+                            <label>
+                                Почта
+                                <input type="email" name="email" placeholder="post@mail.com" />
+                            </label>
+            
+                            <label>
+                                Оставить коментарий
+                                <textarea name="feedback" rows="5" placeholder="Type your message here...">
+            
+                                        </textarea>
+                            </label>
+            
+                            <label>
+                                <input type="checkbox" name="newsletter">
+                                Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                            </label>
+            
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- футер -->
+            <button type="button" class="btn" data-open-modal>Заказать услугу</button>
+            <!-- скрипт фидер -->
+            <script>
+                const { height: pageHeaderHeight } = document
+                    .querySelector(".header")
+                    .getBoundingClientRect();
+
+                document.body.style.paddingTop = ${ pageHeaderHeight } px;
+            </script>
+            <!-- скрипт модалка -->
+            <script>
+                const refs = {
+                    openModalBtn: document.querySelector("[data-open-modal]"),
+                    closeModalBtn: document.querySelector("[data-close-modal]"),
+                    backdrop: document.querySelector("[data-backdrop]"),
+                };
+
+                refs.openModalBtn.addEventListener("click", toggleModal);
+                refs.closeModalBtn.addEventListener("click", toggleModal);
+
+                refs.backdrop.addEventListener("click", logBackdropClick);
+
+                function toggleModal() {
+                    refs.backdrop.classList.toggle("is-hidden");
+                }
+
+                function logBackdropClick() {
+                    console.log("это клик в бэкдроп");
+                }
+            </script>
         </main>
     </body>
 </html>
