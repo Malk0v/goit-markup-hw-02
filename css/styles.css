@@ -822,6 +822,7 @@ textarea {
 }
 
 .form-wrapper input{
+    display: inline;
 color: #2F303A;
 padding: 8px;
 font-family: inherit;
