@@ -246,6 +246,7 @@
 
 <footer class="footer">
     <div class="footer-2">
+        <!-- лого,адресс,почта,телефон -->
         <address>
 
             <div class="foot-logo">
@@ -265,7 +266,7 @@
             </ul>
         </address>
 
-
+        <!-- наши социальные сети -->
         <div class="footer-social">
             <p class="footer-p">присоединяйтесь</p>
             <ul class="social-link">
@@ -293,23 +294,29 @@
                         </svg></a>
                 </li>
             </ul>
-            </li>
 
         </div>
+        <!-- подписка -->
 
-        <div class="send">
-            <p>Подпишитесь на рассылку</p>
 
-            <div class="mail">
-                <p>E-mail</p>
-                <button type="button" class="send-button">Подписатся
+        <div class="wrapper-send">
+            <p>Подпишись на рассылку</p>
+            <form name="signup_form" autocomplete="on" novalidate>
+
+                <label>
+                    <input type="email" name="email" placeholder="post@mail.com" />
+                </label>
+
+                <button type="submit">Отправить
+
                     <svg class="svg-send">
-                        <use href="../goit-markup-hw-02/images/symbol-defs.svg#icon-envelope" width="20" height="20"
-                            x="4" y="11"></use>
+                        <use href="../goit-markup-hw-02/images/happy2.svg" width="20" height="20" x="10" y="8"></use>
                     </svg>
+
                 </button>
-            </div>
+            </form>
         </div>
+
     </div>
 </footer>
 
