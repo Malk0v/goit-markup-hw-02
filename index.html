@@ -319,43 +319,40 @@
 
                 <button class="close" type="button" data-close-modal></button>
               
-                <!-- <button class="close" data-close-modal> 
-                  <svg class="close-svg">
-                      <use href="./images/symbol-defs.svg#icon-instagram" width="15" height="15"  x="7" y="7"></use>
-                  </svg>
-                </button> -->
-
                 <h2>Оставьте свои данные, мы вам перезвоним</h2>
 
-               <div class="form-wrapper">
+                <div class="form-wrapper">
                     <form name="signup_form" autocomplete="on" novalidate>
-                        <label>
+                        <label class="wrapper-laber">
                             Имя
                             <input type="text" name="username" placeholder="Jacob Mercer"/>
                         </label>
                     
-                        <label>
+                        <label class="wrapper-laber">
                             Телефон
                              <input type="tel" name="phone_number" placeholder="+38 050 88 888 88" />
                         </label>
                         
-                        <label>
+                        <label class="wrapper-laber">
                             Почта 
                             <input type="email" name="email" placeholder="post@mail.com" />
+                        </label class="wrapper-laber">
+                        
+                        <label class="wrapper-laber">
+                            Оставить коментарий
+                            <textarea name="feedback" rows="6" placeholder="оставить коментарий" ></textarea>
                         </label>
                         
-                        <label>
-                            Оставить коментарий
-                            <textarea name="feedback" rows="5" placeholder="оставить коментарий" >
-                            </textarea>
-                        </label>
-
-                        <input type="checkbox" name="newsletter" id="policy">
-                        <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                        <div class="wrapper-form">
+                            <input type="checkbox" name="newsletter" id="policy">
+                            <label for="policy">
+                                Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                            </label>
+                        </div>
                     
                         <button type="submit" class="modal-button">Отправить</button>
                     </form>
-               </div>
+                </div>
             </div>
         </div>
 <!-- футер -->
