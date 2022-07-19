@@ -316,12 +316,14 @@
     <div class="backdrop is-hidden" data-backdrop>
 
             <div class="modal">
+
+                <button class="close" type="button" data-close-modal></button>
               
-                <button class="close" data-close-modal> 
+                <!-- <button class="close" data-close-modal> 
                   <svg class="close-svg">
-                      <use href="../goit-markup-hw-02/images/symbol-defs.svg#icon-close" width="15" height="15"  x="7" y="7"></use>
+                      <use href="./images/symbol-defs.svg#icon-instagram" width="15" height="15"  x="7" y="7"></use>
                   </svg>
-                </button>
+                </button> -->
 
                 <h2>Оставьте свои данные, мы вам перезвоним</h2>
 
@@ -329,7 +331,7 @@
                     <form name="signup_form" autocomplete="on" novalidate>
                         <label>
                             Имя
-                            <input type="text" name="username" placeholder="Jacob Mercer" autofocus />
+                            <input type="text" name="username" placeholder="Jacob Mercer"/>
                         </label>
                     
                         <label>
@@ -344,17 +346,14 @@
                         
                         <label>
                             Оставить коментарий
-                            <textarea name="feedback" rows="5" placeholder="Type your message here...">
-
+                            <textarea name="feedback" rows="5" placeholder="оставить коментарий" >
                             </textarea>
                         </label>
 
-                        <label>
-                            <input type="checkbox" name="newsletter">
-                            Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
-                        </label>
+                        <input type="checkbox" name="newsletter" id="policy">
+                        <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
                     
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="modal-button">Отправить</button>
                     </form>
                </div>
             </div>
@@ -428,13 +427,13 @@
     </footer>
 
 <!-- скрипт фидер -->
-<script>
+<!-- <script>
     const { height: pageHeaderHeight } = document
             .querySelector(".header")
             .getBoundingClientRect();
 
-        document.body.style.paddingTop = ${ pageHeaderHeight } px;
-</script>
+        document.body.style.paddingTop = ${pageHeaderHeight}px;
+</script> -->
 <!-- скрипт модалка -->
 <script>
     const refs = {
@@ -455,6 +454,20 @@
     function logBackdropClick() {
         console.log("это клик в бэкдроп");
     }
+</script>
+<!-- скрипт для формы  -->
+<script>
+    (() => {
+        document
+        .querySelector('.js-speaker-form')
+        .addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+            console.log('${name}: ${value}'),
+            );
+        });
+    })();
 </script>
 </body>
 
