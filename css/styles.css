@@ -2,7 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-    border: 0;
+    /* border: 0; */
 }
 
 *,
@@ -227,8 +227,6 @@ body {
     color: var(--white-color);
     width: 200px;
     height: 50px;
-    left: 700px;
-    top: 430px;
     cursor: pointer;
 }
 
@@ -488,8 +486,8 @@ border-radius: 5px;
  border-radius: 30px;
 }
 
-.foot-item a:active, :focus{
-    border-radius: 30px;
+.foot-item >a:active, :focus{
+    /* border-radius: 30px; */
 color: var(--milk-color);
 }
 
@@ -735,7 +733,7 @@ min-width: 581px;
 min-height: 528px;
 background-color: #fff;
 
-transform:translate(-50%, -50%) scale(1);
+transform:translate(-50%, -50%);
 transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -745,7 +743,68 @@ color: rgb(24, 140, 232);
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.close{
+.close {
+    position: absolute;
+    overflow: hidden;
+    fill: #000000;
+    display: block;
+    top: -15px;
+    right: -15px;
+    width: 35px;
+    height: 35px;
+
+    background-color: #18e87d;
+    border-radius: 20px;
+    transition: 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.close:hover {
+    background-color: rgb(255, 47, 47);
+    transition: 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.close::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url(../images/happy2.svg);
+    background-size: contain;
+    transform: translateY(0px);
+    transition: transform 600ms cubic-bezier(.59, -1.47, .38, 2.03);
+}
+
+.close:hover::before {
+    transform: translateY(27px);
+    transition: transform 600ms cubic-bezier(.59, -1.47, .38, 2.03);
+}
+
+.close::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 13px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    transform: translateY(calc(-50% - 22px));
+    transition: transform 600ms cubic-bezier(.59, -1.47, .38, 2.03);
+}
+
+.close:hover::after {
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    content: "";
+    background-image: url(../images/sad.svg);
+    background-size: contain;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    transform: translateY(calc(-50%));
+    transition: transform 600ms cubic-bezier(.59, -1.47, .38, 2.03);
+}
+/*close{
 position: absolute;
 top: 10px;
 right: 10px;
@@ -763,48 +822,7 @@ border-radius: 30%;
     outline: 2px solid #757575;
     border-radius: 25px;
     background-color: #ffffff;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} */
 
 .modal h2 {
     padding: 40px;
@@ -823,6 +841,7 @@ textarea {
 
 .form-wrapper label{
     display: flex;
+    padding: 10px;
     flex-direction: column;
     padding: 0 40px;
     margin: 8px;
@@ -831,14 +850,18 @@ textarea {
 
 .form-wrapper input{
     display: inline;
-color: #2F303A;
-padding: 8px;
-font-family: inherit;
-}
 
-.form-wrapper button{
-    display: flex;
+    color: #2F303A;
     padding: 10px;
-    
+    font-family: inherit;
 }
 
+.modal-button {
+    margin: 10px 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    background-color: var(--akcent-color);
+    color: var(--white-color);
+}
