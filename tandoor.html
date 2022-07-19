@@ -17,6 +17,7 @@
 
 <html>
     <body>
+
         <!-- header -->
         <header class="header">
             <div class="conteiner">
@@ -58,8 +59,13 @@
                 </nav>
             </div>
         </header>
-
+        <!-- меин -->
         <main>
+
+            
+                <button class="test" type="button" data-close-modal></button>
+            
+
             <div class="main">
         
                 <section>
@@ -245,7 +251,7 @@
             
                     <button class="close" data-close-modal>
                         <svg class="close-svg">
-                            <use href="../goit-markup-hw-02/images/symbol-defs.svg#icon-close" width="15" height="15" x="7" y="7">
+                            <use class="modal-close" href="./images/symbol-defs.svg#icon-instagram" width="25" height="25" x="7" y="7">
                             </use>
                         </svg>
                     </button>
@@ -289,6 +295,78 @@
             <!-- футер -->
             <button type="button" class="btn" data-open-modal>Заказать услугу</button>
             <!-- скрипт фидер -->
+
+            <!-- футер -->
+            <footer class="footer">
+                <div class="footer-2">
+                    <!-- лого,адресс,почта,телефон -->
+                    <address>
+            
+                        <div class="foot-logo">
+                            <a href="./index.html" class="secondary"><span class="word-web">Web</span>Studio</a>
+                        </div>
+                        <ul>
+                            <li class="foot-item">
+                                <a href="https://goo.gl/maps/RxfCTYUpQu2i5JpL6" class="maps">
+                                    г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="foot-item">
+                                <a href="mailto:info@devstudio.com" class="foot-aut">info@devstudio.com</a>
+                            </li>
+                            <li class="foot-item">
+                                <a href="tel:+380961111111" class="foot-aut">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+            
+                    <!-- наши социальные сети -->
+                    <div class="footer-social">
+                        <p class="footer-p">присоединяйтесь</p>
+                        <ul class="social-link">
+                            <li>
+                                <a href="" class="a"><svg class="social-svg">
+                                        <use href="./images/symbol-defs.svg#icon-instagram" width="20" height="20" x="10" y="9">
+                                        </use>
+                                    </svg></a>
+                            </li>
+                            <li>
+                                <a href="" class="a"><svg class="social-svg">
+                                        <use href="./images/symbol-defs.svg#icon-twitter" width="20" height="20" x="10" y="8"></use>
+                                    </svg></a>
+                            </li>
+                            <li>
+                                <a href="" class="a"><svg class="social-svg">
+                                        <use href="./images/symbol-defs.svg#icon-facebook" width="20" height="20" x="10" y="8">
+                                        </use>
+                                    </svg></a>
+                            </li>
+                            <li>
+                                <a href="" class="a"><svg class="social-svg">
+                                        <use href="./images/symbol-defs.svg#icon-linkedin" width="20" height="20" x="10" y="8">
+                                        </use>
+                                    </svg></a>
+                            </li>
+                        </ul>
+            
+                    </div>
+                    <!-- подписка -->
+                    <div class="send">
+                        <p>
+                            Подпишитесь на рассылку
+                        </p>
+            
+                        <div class="mail">
+                            <p>E-mail</p>
+                            <button type="button" class="send-button">Подписатся
+                                <svg class="svg-send">
+                                    <use href="../goit-markup-hw-02/images/symbol-defs.svg#send" width="20" height="20" x="4"
+                                        y="11"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </footer>
             <script>
                 const { height: pageHeaderHeight } = document
                     .querySelector(".header")
