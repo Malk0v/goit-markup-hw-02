@@ -705,6 +705,7 @@ margin: auto 0px;
 /* модалка */
 
 .backdrop{
+    z-index: 5;
 transition: all 0.3s ease 0s;
 position: fixed;
 top: 0;
