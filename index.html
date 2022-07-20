@@ -317,38 +317,51 @@
               
                 <h2>Оставьте свои данные, мы вам перезвоним</h2>
 
-                <div class="form-wrapper">
-                    <form name="signup_form" autocomplete="on" novalidate>
-                        <label class="wrapper-laber">
-                            Имя
-                            <input type="text" name="username" placeholder="Jacob Mercer"/>
+                <form class="form" name="form" autocomplete="on" novalidate>
+                    <label class="form-field">
+                        <input class="form-input" type="text" name="user" placeholder=" " />
+                        <span class="form-label">Имя</span>
+                        <span class="form-icon">
+                            <svg>
+                                <use href="./images/symbol-defs.svg#icon-clock" width="25" height="25"></use>
+                            </svg>
+                        </span>
+                    </label>
+                
+                
+                    <label class="form-field">
+                        <input class="form-input" type="tel" name="phone" placeholder=" " />
+                        <span class="form-label">Телефон</span>
+                        <span class="form-icon">
+                            <svg>
+                                <use href="./images/symbol-defs.svg#icon-clock" width="25" height="25"></use>
+                            </svg>
+                        </span>
+                    </label>
+                
+                    <label class="form-field">
+                        <input class="form-input" type="email" name="email" placeholder=" " />
+                        <span class="form-label">Почта</span>
+                        <span class="form-icon">
+                            <svg>
+                                <use href="./images/symbol-defs.svg#icon-clock" width="25" height="25"></use>
+                            </svg>
+                        </span>
+                    </label>
+                
+                    <label class="form-field">
+                        <textarea name="feedback" rows="4" placeholder="Оставить коментарий"></textarea>
+                    </label>
+                
+                    <div class="wrapper-form">
+                        <input type="checkbox" name="newsletter" id="policy">
+                        <label for="policy">
+                            Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
                         </label>
-                    
-                        <label class="wrapper-laber">
-                            Телефон
-                             <input type="tel" name="phone_number" placeholder="+38 050 88 888 88" />
-                        </label>
-                        
-                        <label class="wrapper-laber">
-                            Почта 
-                            <input type="email" name="email" placeholder="post@mail.com" />
-                        </label>
-                        
-                        <label class="wrapper-laber">
-                            Оставить коментарий
-                            <textarea name="feedback" rows="6" placeholder="оставить коментарий" ></textarea>
-                        </label>
-                        
-                        <div class="wrapper-form">
-                            <input type="checkbox" name="newsletter" id="policy">
-                            <label for="policy">
-                                Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
-                            </label>
-                        </div>
-                    
-                        <button type="submit" class="modal-button">Отправить</button>
-                    </form>
-                </div>
+                    </div>
+                
+                    <button type="submit" class="modal-button"><a class="header-link" href="./portfolio.html">Портфолио</a></button>
+                </form>
             </div>
     </div>
 <!-- футер -->
@@ -412,7 +425,7 @@
                             <input type="email" name="email" placeholder="post@mail.com" />
                         </label>
                     
-                        <button type="submit">Отправить 
+                        <button type="submit">Подписатся
 
                             <svg class="svg-send">
                                 <use href="../goit-markup-hw-02/images/happy2.svg" width="20" height="20" x="10" y="8"></use>
