@@ -110,20 +110,22 @@
     letter-spacing: 0.03em;
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
-.form-field{
+.form-field {
     position: relative;
-    display: block ;
+    display: flex;
     margin: 15px;
 }
 
-.form-input{
- width: 80%;
- padding: 10px 30px;
+.form-input {
+    margin: auto;
+    width: 90%;
+    padding: 10px 45px;
 }
 
 .form-label{
@@ -145,13 +147,14 @@ transition: transform 700ms cubic-bezier(.58, -0.41, .39, 1.33);
 }
 
 .form-icon svg {
+    padding-left: 5px ;
     width: 25px;
     height: 25px;
     fill: #000000;
 }
 
 .form-field:focus-within > .form-icon svg{
-    fill: rgb(176, 28, 144);
+    fill: #2196F3;
 }
 
 
@@ -164,15 +167,58 @@ transition: transform 700ms cubic-bezier(.58, -0.41, .39, 1.33);
     transform: translate(-41px, -51px);
 }
 
+.form p{
+    padding-left: 0px;
+    margin: 1;
+}
 
 textarea {
     display: block;
     margin: 12px auto;
-    width: 50%;
+    width: 95%;
     padding: 10px;
     resize: none;
     color: #000000;
     font-style: normal;
+}
+
+.wrapper-form {
+    position: relative;
+    width: 85%;
+    margin: 10px auto;
+    padding-left: 30px;
+}
+
+.wrapper-form input{
+position: absolute;
+width: 1px;
+height: 1px;
+margin: 1px;
+padding-left: 20px;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
+} 
+
+.icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 1px;
+    left: 3px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.checbox:checked + .icon{
+    border-color: transparent;
+background-image: url(./images/icon_check.svg);
+background-color: #2196F3;
+background-size: contain;
+background-origin: border-box;
 }
 
 .modal-button {
