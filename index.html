@@ -96,7 +96,7 @@
                         <li class="li-power">
                              <div class="power-wrapper">
                                     <svg class="power-svg">
-                                        <use href="./images/symbol-defs.svg#icon-Vector" width="70" height="70"></use>
+                                        <use href="./images/symbol-defs.svg#icon-Vector1" width="70" height="70"></use>
                                     </svg>
                              </div>
                             <h3>Планирование </h2>
@@ -310,59 +310,67 @@
 
     <!-- модалка -->
     <div class="backdrop is-hidden" data-backdrop>
-
-            <div class="modal">
-
-                <button class="close" type="button" data-close-modal></button>
-              
-                <h2>Оставьте свои данные, мы вам перезвоним</h2>
-
-                <form class="form" name="form" autocomplete="on" novalidate>
-                    <label class="form-field">
-                        <input class="form-input" type="text" name="user" placeholder=" " />
-                        <span class="form-label">Имя</span>
-                        <span class="form-icon">
-                            <svg>
-                                <use href="./images/symbol-defs.svg#icon-clock" width="25" height="25"></use>
-                            </svg>
-                        </span>
+    
+        <div class="modal">
+    
+            <button class="close" type="button" data-close-modal></button>
+    
+            <h2>Оставьте свои данные, мы вам перезвоним</h2>
+    
+    
+            <form class="form" name="form" autocomplete="on" novalidate>
+                <label class="form-field">
+                    <input class="form-input" type="text" name="user" placeholder=" " />
+                    <span class="form-label">Имя</span>
+                    <span class="form-icon">
+                        <svg>
+                            <use href="./images/symbol-defs.svg#icon-form-client" width="15" height="15"></use>
+                        </svg>
+                    </span>
+                </label>
+    
+    
+                <label class="form-field">
+                    <input class="form-input" type="tel" name="phone" placeholder=" " />
+                    <span class="form-label">Телефон</span>
+                    <span class="form-icon">
+                        <svg>
+                            <use href="./images/symbol-defs.svg#icon-form-tel" width="15" height="15"></use>
+                        </svg>
+                    </span>
+                </label>
+    
+                <label class="form-field">
+                    <input class="form-input" type="email" name="email" placeholder=" " />
+                    <span class="form-label">Почта</span>
+                    <span class="form-icon">
+                        <svg>
+                            <use href="./images/symbol-defs.svg#icon-form-mail" width="15" height="15"></use>
+                        </svg>
+                    </span>
+                </label>
+    
+                <p>
+                    Коментарий
+                </p>
+    
+                <label class="form-field">
+    
+                    <textarea name="feedback" rows="4" placeholder="Введите текст"></textarea>
+                </label>
+    
+                <div class="wrapper-form">
+    
+                    <label for="policy">
+                        <input class="checbox" type="checkbox" name="newsletter" id="policy">
+                        <span class="icon"></span>
+                        Соглашаюсь с рассылкой и принимаю <a href="">условия договора</a>
                     </label>
-                
-                
-                    <label class="form-field">
-                        <input class="form-input" type="tel" name="phone" placeholder=" " />
-                        <span class="form-label">Телефон</span>
-                        <span class="form-icon">
-                            <svg>
-                                <use href="./images/symbol-defs.svg#icon-clock" width="25" height="25"></use>
-                            </svg>
-                        </span>
-                    </label>
-                
-                    <label class="form-field">
-                        <input class="form-input" type="email" name="email" placeholder=" " />
-                        <span class="form-label">Почта</span>
-                        <span class="form-icon">
-                            <svg>
-                                <use href="./images/symbol-defs.svg#icon-clock" width="25" height="25"></use>
-                            </svg>
-                        </span>
-                    </label>
-                
-                    <label class="form-field">
-                        <textarea name="feedback" rows="4" placeholder="Оставить коментарий"></textarea>
-                    </label>
-                
-                    <div class="wrapper-form">
-                        <input type="checkbox" name="newsletter" id="policy">
-                        <label for="policy">
-                            Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
-                        </label>
-                    </div>
-                
-                    <button type="submit" class="modal-button"><a class="header-link" href="./portfolio.html">Портфолио</a></button>
-                </form>
-            </div>
+                </div>
+    
+                <button type="submit" class="modal-button"><a href="./portfolio.html">Отправить</a></button>
+            </form>
+        </div>
     </div>
 <!-- футер -->
     <footer class="footer">
@@ -428,7 +436,7 @@
                         <button type="submit">Подписатся
 
                             <svg class="svg-send">
-                                <use href="../goit-markup-hw-02/images/happy2.svg" width="20" height="20" x="10" y="8"></use>
+                                <use href="../goit-markup-hw-02/images/symbol-defs.svg#icon-red-send" width="20" height="20" x="10" y="8"></use>
                             </svg>
 
                         </button>
