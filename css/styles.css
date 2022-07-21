@@ -495,6 +495,7 @@ color: var(--milk-color);
 /* footer logo */
 
 .foot-logo{
+margin: 30px 0 ;
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
@@ -589,7 +590,7 @@ margin: auto 0px;
 }
 
 .svg-send {
-    outline: 1px dashed red;
+    /* outline: 1px dashed red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -599,6 +600,22 @@ margin: auto 0px;
     fill: #F5F4FA;
     color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -810,6 +827,15 @@ transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: transform 600ms cubic-bezier(.59, -1.47, .38, 2.03);
 }
 
+
+
+
+
+
+
+
+
+
 /* форма */
 
 .modal h2 {
@@ -851,8 +877,8 @@ transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
 .form-icon {
     position: absolute;
-    top: 0;
-    left: 30px;
+    top: 3px;
+    left: 37px;
     transform: translate(30%, 45%);
     display: block;
     width: 25px;
@@ -860,20 +886,18 @@ transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .form-icon svg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 25px;
     height: 25px;
     fill: #000000;
 }
 
 .form-field:focus-within>.form-icon svg {
-    fill: rgb(176, 28, 144);
+    fill: var(--akcent-color);
 }
 
 
 .form-field:focus-within>.form-label {
+    color: var(--akcent-color);
     transform: translate(-41px, -51px);
     transition: transform 700ms cubic-bezier(.58, -0.41, .39, 1.33);
 }
@@ -882,6 +906,10 @@ transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
     transform: translate(-41px, -51px);
 }
 
+.form p {
+    padding-left: 45px;
+    margin: 0;
+}
 
 textarea {
     display: block;
@@ -893,9 +921,43 @@ textarea {
     font-style: normal;
 }
 
-.wrapper-form{
+.wrapper-form {
+    position: relative;
     width: 85%;
-    margin:10px auto;
+    margin: 10px auto;
+    padding-left: 30px;
+}
+
+.wrapper-form input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 1px;
+    padding-left: 20px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 1px;
+    left: 3px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.checbox:checked+.icon {
+    border-color: transparent;
+    background-image: url(../images/icon_check.svg);
+    background-color: #2196F3;
+    background-size: contain;
+    background-origin: border-box;
 }
 
 .modal-button {
