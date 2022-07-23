@@ -153,6 +153,12 @@ transition: transform 700ms cubic-bezier(.58, -0.41, .39, 1.33);
     fill: #000000;
 }
 
+.form-field input{
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #2196F3;
+}
+
 .form-field:focus-within > .form-icon svg{
     fill: #2196F3;
 }
@@ -168,8 +174,7 @@ transition: transform 700ms cubic-bezier(.58, -0.41, .39, 1.33);
 }
 
 .form p{
-    padding-left: 0px;
-    margin: 1;
+    padding-left: 20px;
 }
 
 textarea {
@@ -180,6 +185,10 @@ textarea {
     resize: none;
     color: #000000;
     font-style: normal;
+
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #2196F3;
 }
 
 .wrapper-form {
@@ -214,7 +223,7 @@ overflow: hidden;
 }
 
 .checbox:checked + .icon{
-    border-color: transparent;
+border-color: transparent;
 background-image: url(./images/icon_check.svg);
 background-color: #2196F3;
 background-size: contain;
